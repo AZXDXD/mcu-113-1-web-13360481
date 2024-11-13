@@ -2,77 +2,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.min.css" />
     <title>電子商網管理後台</title>
   </head>
-  <b>
+  <body>
     <header>
       <h3>超級正常的電子商網管理後台</h3>
     </header>
-    <nav>
-      <a href="./from.html">產品新增</a>
-    </nav>
-    <form>
-      <input type="text" placeholder="產品名稱" />
-      <button type="button">查詢</button>
-    </form>
-    <table border="1">
-      <tr>
-        <th>No.</th>
-        <th>名稱</th>
-        <th>廠商</th>
-        <th>單格</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>圖像 Angular 開發入門 第二版</td>
-        <td>博碩文化</td>
-        <td>500</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>金魚都能懂的 CSS 必學屬性</td>
-        <td>博碩文化</td>
-        <td>500</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>假土豆</td>
-        <td>拉阿布</td>
-        <td>100</td>
-      </tr>
-    </table>
-    <hr />
-    <div>
-      <img src="./images/angular.jpg" alt="Angular" width="100" />
-      <div>
-        <span>1</span>
-        <span>圖像 Angular 開發入門 第二版</span>
+    <section class="body">
+      <nav>
+        <ul>
+          <li>
+            <a href="./from.html">產品新增</a>
+          </li>
+          <li>
+            <a>登入</a>
+          </li>
+        </ul>
+      </nav>
+      <form>
+        <input type="text" placeholder="產品名稱" />
+        <button type="button">查詢</button>
+      </form>
+      <table border="1">
+        <tr>
+          <th>No.</th>
+          <th>名稱</th>
+          <th>廠商</th>
+          <th>單價</th>
+        </tr>
+        <tr>
+          <td class="id">1</td>
+          <td>圖像 Angular 開發入門 第二版</td>
+          <td class="company">博碩文化</td>
+          <td class="price">500 NTD</td>
+        </tr>
+        <tr>
+          <td class="id">2</td>
+          <td>金魚都能懂的 CSS 必學屬性</td>
+          <td class="company">博碩文化</td>
+          <td class="price">500 NTD</td>
+        </tr>
+      </table>
+      <hr />
+      <div class="card-container">
+        <div class="card">
+          <img src="./images/angular.jpg" alt="Angular" width="100" />
+          <div>
+            <span>1</span>
+            <a href="./angular.html">圖像 Angular 開發入門 第二版</a>
+          </div>
+          <div>博碩文化</div>
+          <div>500NTD</div>
+        </div>
+        <div class="card">
+          <img src="./images/css.jpg" alt="CSS" width="100" />
+          <div>
+            <span>2</span>
+            <a href="./CSS.html">金魚都能懂的 CSS 必學屬性</a>
+          </div>
+          <div>博碩文化</div>
+        <div>500NTD</div>
+        </div>
       </div>
-      <div>博碩文化</div>
-      <div>500NTD</div>
-    </div>
-    <div>
-      <img src="./images/css.jpg" alt="CSS" width="100" />
-    </div>
-    <div>
-      <div>
-        <span>2</span>
-        <span>金魚都能懂的 CSS 必學屬性</span>
-      </div>
-      <div>博碩文化</div>
-      <div>500NTD</div>
-    </div>
-    <div>
-      <div>
-        <img src="./images/potato.jpg" alt="CSS" width="100" />
-      </div>
-      <div>
-        <span>3</span>
-        <span>假土豆</span>
-      </div>
-      <div>拉阿布</div>
-      <div>100NTD</div>
-    </div>
+    </section>
     <footer>@ 2024</footer>
   </body>
 </html>
