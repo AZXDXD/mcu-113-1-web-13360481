@@ -5,5 +5,7 @@
         "extensionName": ".min.css",
         "savePath": "/src"
       }
-    ]
-  }
+   ],
+  "liveSassCompile.settings.excludeList": ["/src/assets/code/**"]
+}
+  
