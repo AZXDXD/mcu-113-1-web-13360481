@@ -13,6 +13,9 @@ html {
 
 body {
     background-color: var(--body-color);
+    .container {
+      width: 100%;
+  }
 }
 
 .container {
@@ -27,11 +30,13 @@ body {
 
 wrapper {
     padding-inline: 10vw;
+
     .home-box {
       padding-block: 6em;
       height: 100vh;
       min-height: 700px;
     }
+    
     .section {
       padding-block: 6em;
       min-height: 700px;
